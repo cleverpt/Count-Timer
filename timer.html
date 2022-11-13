@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Time counter</title>
+</head>
+<body>
+    <div class="container">
+        <center>
+          <h1>TIMER V2.0</h1>
+        </center>
+        <div class="wrapper">
+          <div class="timebox">
+            <fieldset class="time">
+              <legend>TIME</legend>
+              <span class="minutes" onClick="setTimeMin()">00</span>m
+              <span class="seconds" onClick="setTimeSec()">00</span>s
+            </fieldset>
+          </div>
+      
+          <br>
+          <div class="control">
+            <button class="btnStart" onclick="start()" disabled>START</button>
+            <button class="btnPause" onclick="pause()" disabled>PAUSE</button>
+            <button class="btnReset" onclick="reset()" disabled>RESET</button>
+          </div>
+      
+        </div>
+        <progress class="progressBar"></progress>
+        <div class="logBox">
+          <fieldset>
+            <legend>log</legend>
+            <div class="log">
+      
+            </div>
+          </fieldset>
+        </div>
+      </div> 
+      <script src="main.js"></script>
+</body>
+</html>

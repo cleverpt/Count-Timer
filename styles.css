@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    background: #00ffff;
+  }
+  
+
+  @media screen and (max-width: 992px){
+
+    body{
+        background-color: antiquewhite;
+    }
+    
+  }
+
+  @media screen and (max-width: 600px){
+
+    body{
+        background-color: bisque;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 400px) {
+
+    .container {
+        float: none;
+        width: 100%;
+    }
+    
+  }
+
+  .container {
+    width: 80%;
+    height: 80vh;
+    margin: 0 auto;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 1px gray;
+    padding: 10px;
+    background-color: #ccc;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 8px;
+    background-color: #fff;
+  }
+  
+  fieldset {
+    padding: 8px;
+    border: 1px dashed gray;
+    background-color: #fff;
+  }
+  
+  .time {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .time > .minutes,
+  .seconds {
+    font-weight: bold;
+    font-size: 50px;
+  }
+  
+  .control {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .control > button {
+    height: 40px;
+    width: 30%;
+  }
+  
+  .control > .btnStart:active,
+  .btnStart:hover {
+    border-color: green;
+    background-color: green;
+    color: white;
+  }
+  
+  .control > .btnPause:active,
+  .btnPause:hover {
+    border-color: orange;
+    background-color: orange;
+    color: white;
+  }
+  
+  .control > .btnReset:active,
+  .btnReset:hover {
+    border-color: red;
+    background-color: red;
+    color: white;
+  }
+  
+  progress {
+    width: 100%;
+    height: 20px;
+    background-color: gray;
+    color: red;
+  }
+  
+  .log {
+    font-size: 10px;
+    font-style: italic;
+    padding: 10px;
+    line-height: 1;
+    overflow: scroll;
+    max-height: 100px;
+  }
+  
